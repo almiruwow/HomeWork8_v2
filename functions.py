@@ -2,6 +2,9 @@ from main import Question
 
 
 def question(profile):
+    """
+    Создаем экземпляры класса и возвращаем их в списке
+    """
     q1 = Question(profile[0]['q'], profile[0]['d'], profile[0]['a'])
     q2 = Question(profile[1]['q'], profile[1]['d'], profile[1]['a'])
     q3 = Question(profile[2]['q'], profile[2]['d'], profile[2]['a'])
@@ -12,6 +15,9 @@ def question(profile):
 
 
 def statistics(lists):
+    """
+    Выводит статистику
+    """
     total_points = 0
     answers = 0
     for count in lists:
